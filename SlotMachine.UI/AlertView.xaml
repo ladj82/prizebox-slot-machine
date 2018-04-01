@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="SlotMachine.UI.AlertView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:components="clr-namespace:SlotMachine.UI.Components"
+        Height="768" Width="1024">
+    <UserControl.Background>
+        <ImageBrush ImageSource="pack://siteoforigin:,,,/Resources/App/imgAppBackground.jpg"/>
+    </UserControl.Background>
+    <Grid x:Name="grdContainer">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <components:AlertLabel x:Name="ucAlertLabel" Margin="0" Grid.Row="1"/>
+    </Grid>
+</UserControl>

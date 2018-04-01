@@ -1,0 +1,27 @@
+﻿<UserControl
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wpfanimated="http://wpfanimatedgif.codeplex.com"
+        xmlns:components="clr-namespace:SlotMachine.UI.Components" x:Name="wndPrintView" x:Class="SlotMachine.UI.PrintView"
+        Height="768" Width="1024" Loaded="wndPrintView_Loaded">
+    <UserControl.Background>
+        <ImageBrush ImageSource="pack://siteoforigin:,,,/Resources/App/imgAppBackground.jpg"/>
+    </UserControl.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="350"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <components:AlertLabel x:Name="ucAlertLabelHeader"/>
+        <Image wpfanimated:ImageBehavior.AnimatedSource="pack://siteoforigin:,,,/Resources/App/imgPrizeGift.gif"
+				wpfanimated:ImageBehavior.RepeatBehavior="1" wpfanimated:ImageBehavior.AnimateInDesignMode="False"
+				wpfanimated:ImageBehavior.AutoStart="True" Width="631" Height="332" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <components:AlertLabel x:Name="ucAlertLabelSubHeader" Grid.Row="2"/>
+        <components:AlertLabel x:Name="ucAlertLabelStoreName" Grid.Row="3"/>
+        <components:AlertLabel x:Name="ucAlertLabelTakeCupomMessage" Grid.Row="4"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,15 @@
+﻿<UserControl x:Name="ucAlertLabel" x:Class="SlotMachine.UI.Components.AlertLabel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid x:Name="grdContainer">
+        <Grid.Background>
+            <SolidColorBrush Color="White" Opacity="0.15"/>
+        </Grid.Background>
+        <!--<Label x:Name="lblText" Margin="0" FontFamily="Comfortaa" FontSize="36" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" Content="text"/>-->
+        <TextBlock x:Name="lblText" Foreground="White" FontFamily="Comfortaa" FontSize="36" TextAlignment="Center" Text="text" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Grid>
+</UserControl>
